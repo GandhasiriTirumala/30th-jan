@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*.parent{
+			color: blue;
+			background-color: pink;
+		}*/
+		/* descandant*/
+		.demo p{
+			color: orange;
+		}
+		/* child selector*/
+		.demo>p{
+			background-color: green;
+		}
+		/*adjacent*/
+		.demo+p{
+			background-color: red;
+		}
+		/*genral*/
+		.demo~h2{
+			background-color:#FFE5B4;
+
+}
+	</style>
+</head>
+<body>
+	<!--<section class="parent">
+		<p>hello</p>
+		<h1>hiiiii</h1>
+		<span>good afternoon</span>
+	</section> -->
+	<section class="demo">
+		<p>This is para one child to section</p>
+		<p>This is para two child to section</p>
+		<div>
+			<h1>this is h1 grand child to selection and child to div</h1>
+			<p>This is grand child to section and child to div</p>
+		</div>
+		<p>This is para three child to section.</p>
+	</section>
+	<p> paragraph after section</p>
+	<h2> Good evening</h2>
+</body>
+</html>
